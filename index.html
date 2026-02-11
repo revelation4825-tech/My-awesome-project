@@ -7,32 +7,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-    <header>
-    <form>
-        <input class="search-input" type="search" placeholder="Enter a city.." required/>
-        <input class="search-button" type="submit"/>
+<div class="weather-app">
+  <header>
+    <form id="search-form">
+      <input type="search" placeholder="Enter a city.." required class="search-input" id="search-input" />
+      <input type="submit" value="Search" class="search-button" />
     </form>
-    </header>
-    <main>
-        <h1 class="current-city">
-        Paris
-        </h1>
+  </header>
+  <main>
+    <div class="current-weather">
+      <div>
+        <h1 class="current-city" id="current-city">Paris</h1>
         <p class="current-details">
-            Saturday 12:49, moderate rain 
-            <br>
-            Humclassity:<strong> 87%</strong>, <strong>Wind: 7.2km/h</strong>
+          <span id="current-date">Monday 10:53</span>, moderate rain
+          <br />
+          Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
         </p>
-        <p class="current-temp">
-        ☀️ 24°C
-        </p>
-    </main>
-    <footer>
-        <p>
-            This project was coded by <a href="https://github.com/revelation4825-tech" target="_blank">Dana K</a> and is <a href="" target="_blank">open-sourced on GitHub</a> and <a href="" target="_blank">hosted on Netlify</a>
-        </p>
-    </footer>
+      </div>
+      <div class="current-temperature">
+        <span class="current-temperature-icon">🌤️</span><span class="current-temperature-value">12</span><span
+          class="current-temperature-unit">°C</span>
+      </div>
     </div>
+  </main>
+  <footer>
+    <p>
+      This project was coded by
+      <a href="https://github.com/revelation4825-tech" target="_blank">Dana K</a> and is
+      <a href="" target="_blank"> open-sourced on GitHub</a> and
+      <a href="" target="_blank">hosted on Netlify</a>
+    </p>
+  </footer>
+</div>
     <script src="app.js"></script>
 </body>
 </html>
