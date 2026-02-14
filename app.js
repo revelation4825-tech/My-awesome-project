@@ -11,6 +11,7 @@
 
     function displayTemperature(response) {
         let currentTemperature = document.querySelector("#current-temperature-value");
+        let currentDescription = document.querySelector("#current-description");
         let humidityElement = document.querySelector("#humidity");
         let windSpeedElement = document.querySelector("#wind-speed");
         let timeElement = document.querySelector("#time");
